@@ -1,0 +1,27 @@
+{
+  "name":"content-unocss",
+  "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "generate": "nuxi generate",
+    "postinstall": "nuxi prepare theme"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@iconify-json/carbon": "^1.1.9",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@nuxtjs/color-mode": "^3.1.8",
+    "@unocss/nuxt": "^0.45.30",
+    "@vueuse/nuxt": "^9.3.1",
+    "eslint": "^8.26.0",
+    "nuxt": "^3.0.0-rc.12",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.2.0",
+    "nuxt-icon": "^0.1.7"
+  }
+}
