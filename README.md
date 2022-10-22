@@ -18,3 +18,7 @@ A personal website theme powered by [Nuxt Content](https://content.nuxtjs.org), 
 ## License 📎
 
 [MIT License](./LICENSE)
+
+## Refer
+
+- [Content Wind](https://github.com/Atinux/content-wind)
