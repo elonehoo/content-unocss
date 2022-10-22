@@ -22,3 +22,4 @@ A personal website theme powered by [Nuxt Content](https://content.nuxtjs.org), 
 ## Refer
 
 - [Content Wind](https://github.com/Atinux/content-wind)
+- [Vitesse for Nuxt 3](https://github.com/antfu/vitesse-nuxt3)
