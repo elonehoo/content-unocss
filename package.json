@@ -5,6 +5,13 @@
   "description": "A lightweight Nuxt theme to build a Markdown driven website. Powered by Nuxt Content, UnoCss and Iconify.",
   "author": "Elone Hoo <huchengyea@163.com>",
   "main": "nuxt.config.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/content-unocss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/content-unocss/issues"
+  },
   "files": [
     "app/",
     "components/",
