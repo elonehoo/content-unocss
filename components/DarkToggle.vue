@@ -1,18 +1,3 @@
-<!-- <script setup lang="ts">
-const color = useColorMode()
-
-function toggleDark() {
-  color.preference = color.value === 'dark' ? 'light' : 'dark'
-}
-</script>
-
-<template>
-  <button class="!outline-none" @click="toggleDark">
-    <div class="dark:i-carbon-moon i-carbon-sun" />
-  </button>
-</template> -->
-
-
 <script setup lang="ts">
 const colorMode = useColorMode()
 const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
