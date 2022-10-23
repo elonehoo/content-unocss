@@ -15,6 +15,10 @@ A personal website theme powered by [Nuxt Content](https://content.nuxtjs.org), 
 - Highlight code blocks with [Shiki](https://shiki.matsu.io)
 - Create Vue components in `components/content/` and use them in your Markdown
 
+## Get started
+
+Duplicate the GitHub template: [elonehoo/content-unocss-template](https://github.com/elonehoo/content-unocss-template)
+
 ## License 📎
 
 [MIT License](./LICENSE)
