@@ -64,6 +64,9 @@ jobs:
       - name: Add .nojekyll file
         run: touch .output/public/.nojekyll
 
+      - name: Add CNAME file
+        run: echo 'content-unocss.elonehoo.xyz' > .output/public/CNAME
+
         # Deployment job
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
