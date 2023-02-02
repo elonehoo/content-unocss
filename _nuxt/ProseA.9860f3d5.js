@@ -1,1 +1,0 @@
-import{x as n}from"./query.d5d7469f.js";import{I as a,N as r,T as s,Y as f,Z as l}from"./runtime-core.esm-bundler.ac1ee3c4.js";const u=a({__name:"ProseA",props:{href:{type:String,default:""},blank:{type:Boolean,default:!1}},setup(e){return(t,p)=>{const o=n;return r(),s(o,{href:e.href},{default:f(()=>[l(t.$slots,"default")]),_:3},8,["href"])}}});export{u as default};
