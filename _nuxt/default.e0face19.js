@@ -1,0 +1,1 @@
+import{k as s,o as a,a as o,b as t,E as n}from"./entry.f868cf9c.js";const r={},_={class:"max-w-2xl px-4 py-10 m-auto bg-white sm:px-8 sm:shadow dark:bg-[#222] sm:rounded"},c={class:"prose prose-[#222] dark:prose-invert max-w-none"};function d(e,l){return a(),o("div",_,[t("main",c,[n(e.$slots,"default")])])}const p=s(r,[["render",d]]);export{p as default};
