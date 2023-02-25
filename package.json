@@ -31,20 +31,20 @@
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.1",
-    "@iconify-json/twemoji": "^1.1.10",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.33.0",
-    "nuxt": "^3.1.1",
+    "@antfu/eslint-config": "^0.35.3",
+    "@iconify-json/twemoji": "^1.1.11",
+    "bumpp": "^9.0.0",
+    "eslint": "^8.34.0",
+    "nuxt": "^3.2.2",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@iconify-json/carbon": "^1.1.14",
+    "@iconify-json/carbon": "^1.1.16",
     "@nuxt/content": "^2.4.3",
     "@nuxtjs/color-mode": "^3.2.0",
-    "@unocss/nuxt": "^0.49.2",
-    "@vueuse/nuxt": "^9.12.0",
-    "nuxt-icon": "^0.2.10"
+    "@unocss/nuxt": "^0.50.1",
+    "@vueuse/nuxt": "^9.13.0",
+    "nuxt-icon": "^0.3.2"
   },
   "peerDependencies": {
     "nuxt": "^3.0.0-rc.12"
