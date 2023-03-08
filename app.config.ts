@@ -1,12 +1,12 @@
 export default defineAppConfig({
-  socials: {}
-})
-
-declare module '@nuxt/schema' {
-  interface AppConfigInput {
-    socials?: {
-      twitter?: string
-      github?: string
+  socials: {
+    twitter: '',
+    github: ''
+  },
+  nuxtIcon: {
+    aliases: {
+      'dark-mode': 'ph:moon-bold',
+      'light-mode': 'ph:sun-bold'
     }
   }
-}
+})

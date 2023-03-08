@@ -1,0 +1,13 @@
+{
+  "name": "@content-unocss/demo",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview"
+  },
+  "dependencies": {
+    "content-unocss": "workspace:*",
+    "nuxt": "^3.2.2"
+  }
+}
