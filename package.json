@@ -1,6 +1,6 @@
 {
   "name": "content-unocss",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "description": "A lightweight Nuxt theme to build a Markdown driven website. Powered by Nuxt Content, UnoCss and Iconify.",
   "author": "Elone Hoo <huchengyea@163.com>",
