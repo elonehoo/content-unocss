@@ -35,7 +35,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
     "@iconify-json/twemoji": "^1.2.1",
-    "bumpp": "^9.8.1",
+    "bumpp": "^9.9.0",
     "eslint": "^9.16.0",
     "nuxt": "^3.14.1592",
     "typescript": "^5.7.2"
