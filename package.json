@@ -33,7 +33,7 @@
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
+    "@antfu/eslint-config": "^4.2.0",
     "@iconify-json/twemoji": "^1.2.2",
     "bumpp": "^9.9.2",
     "eslint": "^9.17.0",
