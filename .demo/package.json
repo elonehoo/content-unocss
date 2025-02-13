@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "content-unocss": "workspace:*",
-    "nuxt": "^3.15.1"
+    "nuxt": "^3.15.4"
   }
 }

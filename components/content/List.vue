@@ -1,12 +1,12 @@
 <script setup lang="ts">
-// Utils from Nuxt Content
-const { flatUnwrap } = useUnwrap()
 defineProps({
   icon: {
     type: String,
-    default: 'ph:check-circle-duotone'
-  }
+    default: 'ph:check-circle-duotone',
+  },
 })
+// Utils from Nuxt Content
+const { flatUnwrap } = useUnwrap()
 </script>
 
 <template>

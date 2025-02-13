@@ -1,10 +1,10 @@
 {
   "name": "content-unocss",
+  "type": "module",
   "version": "0.0.6",
-  "license": "MIT",
   "description": "A lightweight Nuxt theme to build a Markdown driven website. Powered by Nuxt Content, UnoCss and Iconify.",
-  "author": "Elone Hoo <huchengyea@163.com>",
-  "main": "nuxt.config.ts",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elonehoo/content-unocss.git"
@@ -12,12 +12,13 @@
   "bugs": {
     "url": "https://github.com/elonehoo/content-unocss/issues"
   },
+  "main": "nuxt.config.ts",
   "files": [
+    "app.config.ts",
+    "app.vue",
     "app/",
     "components/",
     "layouts/",
-    "app.config.ts",
-    "app.vue",
     "nuxt.config.ts",
     "nuxt.schema.ts",
     "unocss.config.ts"
@@ -29,27 +30,28 @@
     "preview": "nuxi preview .demo",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxi prepare theme",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
-    "@iconify-json/twemoji": "^1.2.2",
-    "bumpp": "^9.9.2",
-    "eslint": "^9.17.0",
-    "nuxt": "^3.15.1",
-    "typescript": "^5.7.2"
-  },
-  "dependencies": {
-    "@iconify-json/carbon": "^1.2.5",
-    "@nuxt/content": "^2.13.4",
-    "@nuxtjs/color-mode": "^3.5.2",
-    "@unocss/nuxt": "^0.65.3",
-    "@vueuse/nuxt": "^12.3.0",
-    "nuxt-config-schema": "^0.4.7",
-    "nuxt-icon": "^0.6.10"
-  },
   "peerDependencies": {
     "nuxt": "^3.0.0-rc.12"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.2.7",
+    "@nuxt/content": "^3.1.1",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@unocss/nuxt": "^65.4.3",
+    "@vueuse/nuxt": "^12.5.0",
+    "nuxt-config-schema": "^0.4.7",
+    "nuxt-icon": "1.0.0-beta.7"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.0",
+    "@iconify-json/twemoji": "^1.2.2",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.20.1",
+    "nuxt": "^3.15.4",
+    "typescript": "^5.7.3"
   }
 }

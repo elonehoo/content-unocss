@@ -2,8 +2,8 @@
 defineProps({
   icon: {
     type: String,
-    default: 'heroicons-outline:exclamation'
-  }
+    default: 'heroicons-outline:exclamation',
+  },
 })
 </script>
 

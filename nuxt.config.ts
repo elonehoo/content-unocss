@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-config-schema',
-    'nuxt-icon'
+    'nuxt-icon',
   ],
   experimental: {
     reactivityTransform: true,
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     documentDriven: true,
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
-      theme: 'dracula'
-    }
-  }
+      theme: 'dracula',
+    },
+  },
 })

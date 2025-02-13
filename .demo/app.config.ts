@@ -3,11 +3,11 @@ export default defineAppConfig({
   cover: '/cover.jpg',
   socials: {
     twitter: 'elonehoo',
-    github: 'elonehoo/content-unocss'
+    github: 'elonehoo/content-unocss',
   },
   prose: {
     h1: {
-      icon: 'carbon:sailboat-coastal'
-    }
-  }
+      icon: 'carbon:sailboat-coastal',
+    },
+  },
 })

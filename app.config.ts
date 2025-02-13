@@ -1,12 +1,12 @@
 export default defineAppConfig({
   socials: {
     twitter: '',
-    github: ''
+    github: '',
   },
   nuxtIcon: {
     aliases: {
       'dark-mode': 'ph:moon-bold',
-      'light-mode': 'ph:sun-bold'
-    }
-  }
+      'light-mode': 'ph:sun-bold',
+    },
+  },
 })

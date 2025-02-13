@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { Slot, VNode } from 'vue'
-import { defineComponent, getCurrentInstance, useSlots, computed, useUnwrap, h } from '#imports'
+import { computed, defineComponent, getCurrentInstance, h, useSlots, useUnwrap } from '#imports'
 
 /**
  * ContentSlot component
@@ -10,11 +10,11 @@ export default defineComponent({
   functional: true,
   props: {
     /**
-      * A slot name or function
+     * A slot name or function
      */
     use: {
       type: Function,
-      default: undefined
+      default: undefined,
     },
     /**
      * Tags to unwrap separated by spaces
@@ -22,15 +22,17 @@ export default defineComponent({
      */
     unwrap: {
       type: [Boolean, String],
-      default: false
-    }
+      default: false,
+    },
   },
-  setup (props) {
+  setup(props) {
     const { parent } = getCurrentInstance()!
     const { between, default: fallbackSlot } = useSlots()
 
     const tags = computed(() => {
-      if (typeof props.unwrap === 'string') { return props.unwrap.split(' ') }
+      if (typeof props.unwrap === 'string') {
+        return props.unwrap.split(' ')
+      }
       return ['*']
     })
 
@@ -38,21 +40,25 @@ export default defineComponent({
       fallbackSlot,
       tags,
       between,
-      parent
+      parent,
     }
   },
-  render ({ use, unwrap, fallbackSlot, between, tags, parent }: any) {
+  render({ use, unwrap, fallbackSlot, between, tags, parent }: any) {
     try {
       let slot: Slot = use
       if (typeof use === 'string') {
         slot = parent?.slots[use] || parent?.parent?.slots[use]
-        // eslint-disable-next-line no-console
+
         console.warn(`Please set :use="$slots.${use}" in <ContentSlot> component to enable reactivity`)
       }
 
-      if (!slot) { return fallbackSlot ? fallbackSlot() : h('div') }
+      if (!slot) {
+        return fallbackSlot ? fallbackSlot() : h('div')
+      }
 
-      if (!unwrap) { return [slot()] }
+      if (!unwrap) {
+        return [slot()]
+      }
 
       const { flatUnwrap } = useUnwrap()
 
@@ -60,7 +66,7 @@ export default defineComponent({
 
       if (between) {
         return unwrapped.flatMap(
-          (vnode, index) => index === 0 ? [vnode] : [between(), vnode]
+          (vnode, index) => index === 0 ? [vnode] : [between(), vnode],
         )
       }
 
@@ -68,18 +74,22 @@ export default defineComponent({
         if (typeof item.children === 'string') {
           if (typeof acc[acc.length - 1] === 'string') {
             acc[acc.length - 1] += item.children
-          } else {
+          }
+          else {
             acc.push(item.children)
           }
-        } else {
+        }
+        else {
           acc.push(item)
         }
         return acc
       }, [] as Array<VNode | string>)
-    } catch (e) {
+    }
+    catch (e) {
       // Catching errors to allow content reactivity
+      console.error(e)
       return h('div')
     }
-  }
+  },
 })
 </script>
