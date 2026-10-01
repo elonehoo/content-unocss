@@ -40,7 +40,7 @@
   "dependencies": {
     "@iconify-json/carbon": "^1.2.8",
     "@nuxt/content": "^3.4.0",
-    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/color-mode": "^4.0.1",
     "@unocss/nuxt": "^65.5.0",
     "@vueuse/nuxt": "^12.8.2",
     "nuxt-config-schema": "^0.4.7",
